@@ -27,7 +27,8 @@
   <link rel="stylesheet" href="assets/dropdown/css/style.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="stylesheet" href="assets/recaptcha.css">
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+    <link rel="stylesheet" href="cssjs/dark.css" id="theme-link">
+    <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   
   
   
@@ -278,8 +279,10 @@
         <div class="media-container-row title">
            
             <div class="col-12 col-md-8">
-                <div class="mbr-section-btn align-center"><a class="btn btn-black display-4" href="">ТЁМНУЮ&nbsp;</a>
-                    <a class="btn btn-white display-4" href="">СВЕТЛУЮ</a></div>
+                <div class="mbr-section-btn align-center">
+                    <span class="btn btn-black display-4" href="">ТЁМНУЮ&nbsp;</span>
+<!--                    <a class="btn btn-white display-4" href="" id="theme-button">СВЕТЛУЮ</a></div>-->
+                    <span class="btn btn-white display-4" id="theme-button">СВЕТЛУЮ</span></div>
             </div>
         </div>
     </div>
@@ -688,7 +691,8 @@
   <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
   <script src="assets/theme/js/script.js"></script>
   <script src="assets/formoid.min.js"></script>
-  
+  <script src="cssjs/switch_theme.js"></script>
+
   
  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
     <input name="animation" type="hidden">
