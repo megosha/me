@@ -5,6 +5,27 @@
 .cid-rzMrgNeUFf .navbar.navbar-short {
   background: #ffffff;
 }
+.cid-rzMrgNeUFf .navbar.opened {
+  background: #ffffff !important;
+}
+.cid-rzMrgNeUFf .navbar .dropdown-menu .dropdown-item {
+  color: #232323;
+  }
+.cid-rzMrgNeUFf .navbar .dropdown-item {
+  border-bottom: 1px solid #ffffff;
+  color: #6c6c6c !important;
+  background: #efefef;
+}
+.cid-rzMrgNeUFf .navbar .dropdown-item:hover {
+  color: #000000 !important;
+}
+
+.cid-rzMrgNeUFf .nav-link {
+  color: #232323;
+}
+.cid-rzMrgNeUFf .nav-link:hover {
+  color: #ffbc00 !important;
+}
 /*about*/
 .cid-s052KJArV0 {
   background-color: #efefef;

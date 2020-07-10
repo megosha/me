@@ -639,15 +639,15 @@ section.lazy-placeholder:after {
 }
 .cid-rzMrgNeUFf .navbar.opened {
   transition: all .3s;
-  background: #232323 !important;
+  /*background: #232323 !important;*/
 }
-.cid-rzMrgNeUFf .navbar .dropdown-item {
-  transition: all .3s;
-  padding: .3rem 1.5rem;
-  border-bottom: 1px solid #0a0a0a;
-  color: #ffffff !important;
-  background: #232323 !important;
-}
+/*.cid-rzMrgNeUFf .navbar .dropdown-item {*/
+/*  transition: all .3s;*/
+/*  padding: .3rem 1.5rem;*/
+/*  border-bottom: 1px solid #0a0a0a;*/
+/*  color: #efefef !important;*/
+/*  background: #232323 !important;*/
+/*}*/
 .cid-rzMrgNeUFf .navbar .dropdown-item:hover {
   padding-left: 2rem;
 }
@@ -753,13 +753,13 @@ section.lazy-placeholder:after {
   .cid-rzMrgNeUFf .navbar ul.navbar-nav li {
     margin: auto;
   }
-  .cid-rzMrgNeUFf .navbar .dropdown-menu .dropdown-item {
-    padding: .25rem 1.5rem;
-    text-align: center;
-    border-bottom: none !important;
-    background: transparent !important;
-    color: inherit !important;
-  }
+  /*.cid-rzMrgNeUFf .navbar .dropdown-menu .dropdown-item {*/
+  /*  padding: .25rem 1.5rem;*/
+  /*  text-align: center;*/
+  /*  border-bottom: none !important;*/
+  /*  background: transparent !important;*/
+  /*  color: inherit !important;*/
+  /*}*/
   .cid-rzMrgNeUFf .navbar .dropdown-menu .dropdown-item:first-child {
     border-top: none;
   }
@@ -2058,9 +2058,9 @@ section.lazy-placeholder:after {
 .cid-rzMrgNeUFf .navbar .dropdown-item {
   transition: all .3s;
   padding: .3rem 1.5rem;
-  border-bottom: 1px solid #0a0a0a;
-  color: #ffffff !important;
-  background: #232323 !important;
+  /*border-bottom: 1px solid #0a0a0a;*/
+  /*color: #ffffff !important;*/
+  /*background: #232323 !important;*/
 }
 .cid-rzMrgNeUFf .navbar .dropdown-item:hover {
   padding-left: 2rem;
@@ -2172,7 +2172,7 @@ section.lazy-placeholder:after {
     text-align: center;
     border-bottom: none !important;
     background: transparent !important;
-    color: inherit !important;
+    /*color: inherit !important;*/
   }
   .cid-rzMrgNeUFf .navbar .dropdown-menu .dropdown-item:first-child {
     border-top: none;
