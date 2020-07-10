@@ -28,20 +28,7 @@
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="stylesheet" href="assets/recaptcha.css">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-    <script>
-        function get_cookie ( cookie_name )
-            {
-              var results = document.cookie.match ( '(^|;) ?' + cookie_name + '=([^;]*)(;|$)' );
-
-              if ( results ){
-                  console.log(unescape ( results[2] ) );
-                  path_theme = `cssjs/${( unescape ( results[2] ) )}.css`;
-              }
-              else
-                path_theme = `cssjs/dark.css`;
-            document.getElementById("theme-link").setAttribute("href", path_theme);
-            }
-    </script>
+    <script src="cssjs/cookie_theme.js"></script>
   <link rel="stylesheet" href="cssjs/dark.css" id="theme-link" onload="get_cookie('theme-choice')">
 
   

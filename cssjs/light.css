@@ -30,7 +30,7 @@
   background-color: #232323;
 }
 .cid-s0gXiWuSq5 .mbr-section-title {
-  color: #efefef;
+  color: #ffbc00;
 }
 /*answers buttons*/
 .cid-s0gOvn8Wwg {
@@ -134,5 +134,30 @@
   color: #444444;
 }
 .cid-s059k0HRDL .main-text {
+  color: #444444;
+}
+
+/*portfolio page*/
+.cid-s0boHVHXvp {
+  background-color: #efefef;
+}
+.cid-s0boHVHXvp .mbr-section-title {
+  color: #232323;
+}
+/*porfolio*/
+.cid-s0bogp6Na0 {
+  background-color: #efefef;
+}
+.cid-s0bogp6Na0 .card__info {
+  box-shadow: 5.994px 14.835px 30px 0px rgba(163, 163, 163, 0.5);
+}
+/*one work from portfolio*/
+.cid-s3FKMdSOD8 {
+  background-color: #efefef;
+}
+.cid-s3FKMdSOD8 .card-title2 {
+  color: #444444;
+}
+.cid-s3FKMdSOD8 .card-title1 {
   color: #444444;
 }
