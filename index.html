@@ -27,8 +27,9 @@
   <link rel="stylesheet" href="assets/dropdown/css/style.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="stylesheet" href="assets/recaptcha.css">
-    <link rel="stylesheet" href="cssjs/dark.css" id="theme-link">
     <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+    <link rel="stylesheet" href="cssjs/dark.css" id="theme-link">
+
   
   
   
@@ -163,33 +164,6 @@
                             </div>
                         </div>
                     </div>
-                    <div id="tab4" class="tab-pane" role="tabpanel">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p class="mbr-text  mbr-fonts-style display-7">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex magni suscipit illo eligendi amet eaque, quia aperiam corporis quam laudantium, minima id. Provident, nobis quod modi sed. Molestias reprehenderit, velit?
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="tab5" class="tab-pane" role="tabpanel">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p class="mbr-text  mbr-fonts-style display-7">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex magni suscipit illo eligendi amet eaque, quia aperiam corporis quam laudantium, minima id. Provident, nobis quod modi sed. Molestias reprehenderit, velit?
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="tab6" class="tab-pane" role="tabpanel">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p class="mbr-text  mbr-fonts-style display-7">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex magni suscipit illo eligendi amet eaque, quia aperiam corporis quam laudantium, minima id. Provident, nobis quod modi sed. Molestias reprehenderit, velit?
-                                </p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="mbr-section-btn"><a class="btn btn-md btn-warning-outline display-7" href="assets/files/2020.pdf" target="_blank">Cкачать электронную версию</a> 
@@ -209,7 +183,7 @@
         <div class="row">
             <div class="first-col col-md-6">
                 <div class="about-content">
-                    <h2 class="mbr-section-title pb-3 align-left mbr-bold mbr-fonts-style mbr-white display-2"><font color="#ffffff">КАК Я&nbsp;</font><span class="orange">РАБОТАЮ</span></h2>
+                    <h2 class="mbr-section-title pb-3 align-left mbr-bold mbr-fonts-style mbr-white display-2"><font color="#efefef">КАК Я&nbsp;</font><span class="orange">РАБОТАЮ</span></h2>
                     
                     <p class="mbr-text mbr-black mbr-regular mbr-light mbr-fonts-style dark-hover display-7">
                         <span class="mdi-action-done mbr-iconfont"></span>Внимательное отношение к требованиям заказчика<br>
@@ -225,7 +199,7 @@
                 </div>
             </div>
             <div class="second-col col-md-6">
-                <h2 class="mbr-section-title pb-3 align-left mbr-bold mbr-fonts-style mbr-white display-2">
+                <h2 class="mbr-section-title pb-3 align-left mbr-bold mbr-fonts-style theme-main-text mbr-white display-2">
                     МОЯ <span class="orange">СПЕЦИАЛИЗАЦИЯ</span></h2>
                 
                 <div class="row pt-2">
@@ -234,7 +208,7 @@
                        
                          <div class="content-block">
                    
-                    <p class="mbr-text mbr-black mbr-regular mbr-light mbr-fonts-style display-7">
+                    <p class="mbr-text mbr-black mbr-regular mbr-light theme-main-text mbr-fonts-style display-7">
                         Создание полноценных адаптивных: <br><span class="mdi-action-done mbr-iconfont"></span>одностраничных сайтов<br>
                         <span class="mdi-action-done mbr-iconfont"></span>многостраничных сайтов&nbsp;
 <br>                        Создание: 
@@ -280,9 +254,8 @@
            
             <div class="col-12 col-md-8">
                 <div class="mbr-section-btn align-center">
-                    <span class="btn btn-black display-4" href="">ТЁМНУЮ&nbsp;</span>
-<!--                    <a class="btn btn-white display-4" href="" id="theme-button">СВЕТЛУЮ</a></div>-->
-                    <span class="btn btn-white display-4" id="theme-button">СВЕТЛУЮ</span></div>
+                    <span class="btn btn-black display-4" id="dark" onclick="ChangeTheme(this.id)">ТЁМНУЮ&nbsp;</span>
+                    <span class="btn btn-white display-4" id="light" onclick="ChangeTheme(this.id)">СВЕТЛУЮ</span></div>
             </div>
         </div>
     </div>
@@ -615,7 +588,8 @@
 <input type="text" name="fio" placeholder="Ваше имя*" data-form-field="fio" required="required" class="form-control display-7" value="" id="fio-form01-a">
 </div>
 <div class="col-sm-12 form-group" data-for="phone">
-<input type="tel" name="phone" placeholder="Контактный телефон*" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" data-form-field="phone" required="required" class="form-control display-7" value="" id="phone-form01-a">
+<!--<input type="tel" name="phone" placeholder="Контактный телефон*" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" data-form-field="phone" required="required" class="form-control display-7" value="" id="phone-form01-a">-->
+<input type="tel" name="phone" placeholder="Контактный телефон*" data-form-field="phone" required="required" class="form-control display-7" value="" id="phone-form01-a">
 </div>
 <div data-for="email" class="col-sm-12 form-group">
 <input type="email" name="email" placeholder="Email" data-form-field="email" class="form-control display-7" value="" id="email-form01-a">

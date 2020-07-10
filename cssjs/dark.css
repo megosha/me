@@ -1,5 +1,133 @@
-.cid-rzMrgNeUFf .navbar.navbar-short {
-  /*background: #232323 !important;*/
-  background: #6d1b1b !important;
+.theme-main-text {
+  color: #efefef !important;
 }
-
+/*navbar*/
+.cid-rzMrgNeUFf .navbar.navbar-short {
+  background: #232323 !important;
+}
+/*about*/
+.cid-s052KJArV0 {
+  background-color: #232323;
+}
+.cid-s052KJArV0 .mbr-section-title {
+  color: #efefef;
+}
+.cid-s052KJArV0 .nav-tabs .nav-link {
+  color: #efefef;
+}
+.cid-s052KJArV0 .mbr-text {
+  color: #efefef;
+}
+/*how i work and specialization*/
+.cid-s3ESEHhb6V .second-col {
+  background-color: #232323;
+}
+.cid-s3ESEHhb6V span:hover {
+  color: #efefef;
+}
+/*question*/
+.cid-s0gXiWuSq5 {
+  background-color: #efefef;
+}
+.cid-s0gXiWuSq5 .mbr-section-title {
+  color: #444444;
+}
+/*answers buttons*/
+.cid-s0gOvn8Wwg {
+  background-color: #efefef;
+}
+/*technology i use*/
+.cid-s05gIbCE5j {
+  background-color: #232323;
+}
+.cid-s05gIbCE5j .mbr-section-title {
+  color: #efefef;
+}
+/*portfolio title*/
+.cid-s3FTQxF6MM {
+  background-color: #232323;
+}
+.cid-s3FTQxF6MM .mbr-section-title {
+  color: #efefef;
+}
+/*porfolio block index*/
+.cid-s3FTzJ1kNG {
+  background-color: #232323;
+}
+/*clients feedback*/
+.cid-s0gmzUGyoF {
+  background-color: #232323;
+}
+.cid-s0gmzUGyoF .underline .line {
+  background: #efefef;
+}
+.cid-s0gmzUGyoF .mbr-section-title,
+.cid-s0gmzUGyoF .underline {
+  color: #efefef;
+}
+/*prices*/
+.cid-s0ghC9gfp7 {
+  background: #232323;
+}
+.cid-s0ghC9gfp7 .table-wrapper:hover {
+  background-color: #000000;
+  border: 1px solid #000000;
+}
+.cid-s0ghC9gfp7 .table-wrapper:hover .pricing-value,
+.cid-s0ghC9gfp7 .table-wrapper:hover .stars,
+.cid-s0ghC9gfp7 .table-wrapper:hover .mbr-list,
+.cid-s0ghC9gfp7 .table-wrapper:hover .table-heading {
+  color: #ffffff !important;
+}
+/*contact*/
+.cid-s059k0HRDL {
+  background-color: #232323;
+}
+.cid-s059k0HRDL input::-webkit-input-placeholder,
+.cid-s059k0HRDL textarea::-webkit-input-placeholder {
+  color: #efefef;
+}
+.cid-s059k0HRDL input:-moz-placeholder,
+.cid-s059k0HRDL textarea:-moz-placeholder {
+  color: #efefef;
+}
+.cid-s059k0HRDL .form-control-label {
+  color: #efefef;
+}
+.cid-s059k0HRDL .form-control,
+.cid-s059k0HRDL .field-input {
+  color: #ffffff;
+}
+.cid-s059k0HRDL .form-control:focus,
+.cid-s059k0HRDL .field-input:focus {
+  color: #ffffff !important;
+}
+.cid-s059k0HRDL .form-control:hover,
+.cid-s059k0HRDL .field-input:hover {
+  color: #ffffff !important;
+}
+.cid-s059k0HRDL .form-control input::-webkit-input-placeholder,
+.cid-s059k0HRDL .field-input input::-webkit-input-placeholder,
+.cid-s059k0HRDL .form-control textarea::-webkit-input-placeholder,
+.cid-s059k0HRDL .field-input textarea::-webkit-input-placeholder {
+  color: #efefef;
+}
+.cid-s059k0HRDL .form-control input:-moz-placeholder,
+.cid-s059k0HRDL .field-input input:-moz-placeholder,
+.cid-s059k0HRDL .form-control textarea:-moz-placeholder,
+.cid-s059k0HRDL .field-input textarea:-moz-placeholder {
+  color: #efefef;
+}
+.cid-s059k0HRDL .form-control:hover,
+.cid-s059k0HRDL .field-input:hover,
+.cid-s059k0HRDL .form-control:focus,
+.cid-s059k0HRDL .field-input:focus {
+  background-color: #444444;
+  color: #ffffff;
+}
+.cid-s059k0HRDL .title {
+  color: #efefef;
+}
+.cid-s059k0HRDL .main-text {
+  color: #efefef;
+}
