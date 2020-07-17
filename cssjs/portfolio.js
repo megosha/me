@@ -133,12 +133,9 @@ function portfolio_item(number) {
         var images = work['images'];
         section.innerHTML = carousel_form(number, title, description, price, images);
 
-         console.log(number);
-        console.log(typeof number);
 
         for (key in Object.keys(works)) {
              console.log(key);
-        console.log(typeof key);
             if (number !== key) {
                 work_preview = document.getElementById(Object.keys(works)[key]);
                 work_preview.setAttribute('hidden', true);
