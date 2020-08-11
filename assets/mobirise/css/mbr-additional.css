@@ -957,14 +957,15 @@ section.lazy-placeholder:after {
 .cid-s052KJArV0 {
   padding-top: 4rem;
   padding-bottom: 10rem;
-  overflow: hidden;
+  /*overflow: hidden;*/
   /*background-color: #232323;*/
 }
 .cid-s052KJArV0 .inner__container {
   position: relative;
   z-index: 1;
   padding-left: 380px;
-  height: 700px;
+  /*height: 700px;*/
+  height: 750px;
 }
 .cid-s052KJArV0 .mbr-section-title {
   position: relative;
