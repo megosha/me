@@ -58,6 +58,7 @@ function form_list(div_id, slice=0) {
     result += `<p class="mbr-text col-lg-5 col-md-6 col-sm-6 mbr-fonts-style item mbr-normal display-7 hide theme-main-text" id="description"></p>
             <div class="col-lg-3 col-md-6 col-sm-6 text-center" id="return_btn"></div>`;
     document.getElementById(div_id).innerHTML = result;
+    // document.getElementById('description').classList.add("animated");
 }
 
 
