@@ -24,4 +24,5 @@ function ChangeTheme(btn_id)
     setTimeout(() => body.classList.remove('wibro'), 250);
 
         // alert(':P');
+    ym(66628003,'reachGoal','btn_006'); return true;
 }

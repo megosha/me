@@ -79,6 +79,7 @@ function all_works(return_id) {
     document.getElementById(return_id).scrollIntoView({behavior: 'smooth', block: 'center'});
     section = document.getElementById('gallery2-1l');
     section.setAttribute('hidden', true);
+    ym(66628003,'reachGoal','btn_009'); return true;
 }
 
 
