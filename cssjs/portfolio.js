@@ -5,7 +5,7 @@ var works = {
         "description": "<b>Frontend:</b> разработка интерфейса 12 страниц сайта, поиск изображений  <br><b>Backend:</b> кастомизация главной страницы, проектов, новостных разделов, разделов с отчетами и документами, форма обратной связи с возможностью отправлять копии обращений для нескольких электронных почт" +
             "<br><b>Дополнительно:</b> редактирование логотипа, конфигурация базы данных, размещение сайта на сервере с сопутствующими настройками сервисов и служб",
         "price": "",
-        "images": ["sjd_main.jpg", "sjd_project.jpg", "sjd_mobile.jpg"]
+        "images": ["sjd_main.jpg", "sjd_project.jpg", "sjd_mobile.jpg"],
     },
      "3": {
         "company":'ООО "АЛЬТЕНА"',
@@ -77,7 +77,7 @@ function all_works(return_id) {
         }
     }
     document.getElementById(return_id).scrollIntoView({behavior: 'smooth', block: 'center'});
-    section = document.getElementById('extGallery6-1f');
+    section = document.getElementById('gallery2-1l');
     section.setAttribute('hidden', true);
 }
 
@@ -86,44 +86,72 @@ function carousel_form(work_id, title, description, price, images) {
     var li = '';
     var items = '';
     for (img in images) {
-        li += `<li class="li1" data-slide-to="${img}" style="background-image: url('assets/images/${images[img]}');"></li>`;
-        items += `
-                    <div class="carousel-item">
-                        <div class="media-container-row">
-                            <div class="col-md-12">
-                                <div class="wrap-img" style="background-image: url('assets/images/${images[img]}');">
-                                </div>
-                            </div>
-                        </div>
-                    </div>`
+        li += `<div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="">
+                    <div href="#lb-gallery2-1l" data-slide-to="${img}" data-toggle="modal">
+                        <img src="assets/images/${images[img]}" alt="" title="">
+                        <span class="icon-focus"></span>
+<!--                        <span class="mbr-gallery-title mbr-fonts-style display-7">${img}</span>-->
+                   </div>
+               </div>`;
+        if (img == 0){
+            items += `<div class="carousel-item active"><img src="assets/images/${images[img]}" alt="" title=""></div>`
+        }
+        else {
+            items += `<div class="carousel-item"><img src="assets/images/${images[img]}" alt="" title=""></div>`
+        }
+
     }
     var result = `
-        <div class="main container">
+        <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <div class="text-box align-right">
-                        <div class="card__wrap col-lg-4 col-md-6 col-sm-6"></div>
-                    </div>
-                </div>
-                                        
-                <div class="second-col col-md-10">
-                    <div class="carousel slide slides" role="listbox" data-pause="true" data-keyboard="false" data-ride="carousel" data-interval="5000">
-                        <ol class="carousel-indicators">${li}</ol>
-                        <div class="carousel-inner">${items}</div>
+                <div class="col-sm-10"></div>
+            </div>
+        </div>
+        <div>
+            <div class="pt-5">
+                <!-- Gallery -->
+                <div class="mbr-gallery-row align-center">
+                    <div class="mbr-gallery-layout-default">
+                        <div>
+                            <div>
+                                ${li}
+                            </div> 
+                        </div>
+                        <div class="clearfix"></div>  
+                   </div>           
+                </div>    
+                <!-- Lightbox -->
+                <div data-app-prevent-settings="" class="mbr-slider modal fade carousel slide" tabindex="-1" data-keyboard="true" data-interval="false" id="lb-gallery2-1l">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="carousel-inner">
+                                    ${items}
+                                </div>
+                                <a class="carousel-control carousel-control-prev" role="button" data-slide="prev" href="#lb-gallery2-1l">
+                                    <span class="mbri-left mbr-iconfont" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control carousel-control-next" role="button" data-slide="next" href="#lb-gallery2-1l">
+                                    <span class="mbri-right mbr-iconfont" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                                <a class="close" href="#" role="button" data-dismiss="modal">
+                                    <span class="sr-only">Close</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     `;
-    window.initTestimonialsPlugin = true;
-    $('.testimonials-slider').each(function () {
-        initTestimonialsCarousel(this);
-    });
+    console.log(items);
     return result;
 }
 
 function portfolio_item(number) {
-    var section = document.getElementById('extGallery6-1f');
+    var section = document.getElementById('gallery2-1l');
     var descr = document.getElementById('description');
     var return_btn = document.getElementById('return_btn');
     var work = works[number];
@@ -155,5 +183,6 @@ function portfolio_item(number) {
     } else return false;
 
 }
+
 
 
