@@ -55,7 +55,7 @@ function form_list(div_id, slice=0) {
             </div>
         `;
     }
-    result += `<p class="mbr-text col-lg-5 col-md-6 col-sm-6 mbr-fonts-style item mbr-normal display-7 hide theme-main-text" id="description"></p>
+    result += `<p class="mbr-text col-lg-5 col-md-6 col-sm-6 mbr-fonts-style item mbr-normal display-7 theme-main-text" id="description"></p>
             <div class="col-lg-3 col-md-6 col-sm-6 text-center" id="return_btn"></div>`;
     document.getElementById(div_id).innerHTML = result;
     // document.getElementById('description').classList.add("animated");
@@ -66,7 +66,8 @@ function all_works(return_id) {
     // returns all works mode
     var descr = document.getElementById('description');
     descr.innerText = '';
-    $('#description').addClass('hide')
+    descr.setAttribute('hidden', true);
+    // $('#description').addClass('hide')
 
     document.getElementById('return_btn').innerText = '';
 
@@ -147,7 +148,6 @@ function carousel_form(work_id, title, description, price, images) {
             </div>
         </div>
     `;
-    console.log(items);
     return result;
 }
 
@@ -165,7 +165,6 @@ function portfolio_item(number) {
 
 
         for (key in Object.keys(works)) {
-             console.log(key);
             if (number !== key) {
                 work_preview = document.getElementById(Object.keys(works)[key]);
                 work_preview.setAttribute('hidden', true);
@@ -174,7 +173,8 @@ function portfolio_item(number) {
 
         section.removeAttribute('hidden');
         descr.innerHTML = description;
-        $('#description').removeClass('hide');
+        descr.removeAttribute('hidden');
+        // $('#description').removeClass('hide');
         return_btn.innerHTML = `<button class="btn btn-primary btn-sm" type="button" onclick="all_works(${number})">Другие работы</button>`;
         window.initTestimonialsPlugin = true;
         $('.testimonials-slider').each(function () {
